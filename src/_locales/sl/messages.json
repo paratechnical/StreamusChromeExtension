@@ -21,6 +21,9 @@
 	"save": {
 		"message": "Shrani"
 	},
+	"likeSong": {
+		"message": "Like"
+	},
 	"copyUrl": {
 		"message": "Kopiraj povezavo"
 	},

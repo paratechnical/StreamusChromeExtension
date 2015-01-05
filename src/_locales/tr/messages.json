@@ -24,6 +24,9 @@
 	"deleteVideoCommandDescription": {
 		"message": "Video'u geçerli oynatma listesine kaldır"
 	},
+	"likeSong": {
+		"message": "Like"
+	},
 	"copyVideoUrlCommandDescription": {
 		"message": "Oynatılan video adresini kopyala"
 	},

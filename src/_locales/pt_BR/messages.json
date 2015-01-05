@@ -24,6 +24,9 @@
 	"copyUrl": {
 		"message": "Copiar URL"
 	},
+	"likeSong": {
+		"message": "Like"
+	},
 	"copyTitleAndUrl": {
 		"message": "Copiar título - URL"
 	},

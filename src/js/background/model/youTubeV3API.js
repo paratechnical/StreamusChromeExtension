@@ -88,6 +88,23 @@
             }, listOptions);
         },
         
+        rateVideo: function (options) {
+            
+            return this._doRequest(YouTubeServiceType.Rate, {
+                success: function (response) {
+                    if (_.isUndefined(response.items[0])) {
+                        options.error();
+                        throw new Error("No response.items found for options:" + JSON.stringify(options));
+                    }
+
+                    options.success();
+                },
+                error: options.error,
+                complete: options.complete
+            }, {rating:'like',id:options.videoId});
+        },
+        
+
         getSong: function (options) {
             return this.getSongs({
                 songIds: [options.songId],
@@ -198,6 +215,7 @@
             });
         },
         
+
         //  Expects options: { channelId: string, success: function, error: function };
         getTitle: function (options) {
             var ajaxDataOptions = _.extend({

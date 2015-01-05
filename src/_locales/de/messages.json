@@ -21,6 +21,9 @@
     "save": {
             "message": "Speichern"
     },
+	"likeSong": {
+		"message": "Like"
+	},
     "copyUrl": {
             "message": "Kopiere URL"
     },
