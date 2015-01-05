@@ -25,6 +25,9 @@
 		"page": "background.html"
 	},
     "commands": {
+        "likeSong": {
+			"description": "__MSG_likeSongCommandDescription__"
+		},
 		"nextSong": {
 			"description": "__MSG_nextSongCommandDescription__"
 		},

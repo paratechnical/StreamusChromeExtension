@@ -63,7 +63,14 @@
                 disabled: isEmpty,
                 text: chrome.i18n.getMessage('copyUrl'),
                 onClick: this._copyPlaylistUrl.bind(this)
-            }, {
+            },
+            {
+                //  No point in sharing an empty playlist.
+                disabled: isEmpty,
+                text: chrome.i18n.getMessage('likeSong'),
+                onClick: this._copyPlaylistUrl.bind(this)
+            },
+            {
                 //  No point in exporting an empty playlist.
                 disabled: isEmpty,
                 text: chrome.i18n.getMessage('export'),

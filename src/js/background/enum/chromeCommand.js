@@ -2,6 +2,7 @@
 define({
     ShowActiveSong: 'showActiveSong',
     DeleteSongFromStream: 'deleteSongFromStream',
+    LikeSong: 'likeSong',
     CopySongUrl: 'copySongUrl',
     CopySongTitleAndUrl: 'copySongTitleAndUrl',
     NextSong: 'nextSong',

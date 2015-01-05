@@ -22,7 +22,10 @@
 		"message": "Save"
 	},
 	"copyUrl": {
-		"message": "Copy URL"
+		"message": "Copy URL sa se vada"
+	},
+    "likeSong": {
+		"message": "Like"
 	},
 	"copyTitleAndUrl": {
 		"message": "Copy title - URL"
@@ -354,6 +357,11 @@
 	"saveSongs": {
 		"message": "Save songs"
 	},
+
+    "likeSongCommandDescription": {
+		"message": "Like song"
+	},
+
 	"nextSongCommandDescription": {
 		"message": "Go to the next song in the stream"
 	},
