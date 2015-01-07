@@ -200,6 +200,44 @@
             });
         });
 
+        describe('when asked to like a video', function () {
+
+            beforeEach(function () {
+                /*
+                sinon.stub($, 'ajax').yieldsTo('success', {
+                    
+                });
+                */
+            });
+
+            afterEach(function () {
+                $.ajax.restore();
+            });
+
+            it('should return a valid response', function (done) {
+
+                YouTubeV3API.rateVideo({
+                    videoId: 'MKS8Jn_3bnA',
+                    success: function () {
+                        done();
+                    }
+                });
+
+                /*
+                YouTubeV3API.getSong({
+                    songId: 'MKS8Jn_3bnA',
+                    success: function (song) {
+                        expect(song instanceof Backbone.Model).to.equal(true);
+                        expect(song.get('title')).to.equal(songTitle);
+                        expect(song.get('id')).to.equal(songId);
+                        done();
+                    }
+                });
+                */
+
+            });
+        });
+
         describe('when asked to get a title of a playlist', function() {
             var playlistTitle = 'Favorites';
             beforeEach(function() {

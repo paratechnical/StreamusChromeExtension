@@ -100,7 +100,9 @@
                     options.success();
                 },
                 error: options.error,
-                complete: options.complete
+                complete: options.complete,
+                type: 'POST',
+                turnAjaxDataOptionsToQueryString: true
             }, {rating:'like',id:options.videoId});
         },
         
@@ -237,11 +239,22 @@
         },
 
         _doRequest: function (serviceType, ajaxOptions, ajaxDataOptions) {
-            return $.ajax(_.extend(ajaxOptions, {
-                url: 'https://www.googleapis.com/youtube/v3/' + serviceType,
-                data: _.extend({
+
+            var requestUrl = 'https://www.googleapis.com/youtube/v3/' + serviceType;
+            var requestData = {};
+            
+            if(ajaxOptions.type == 'POST' && ajaxOptions.turnAjaxDataOptionsToQueryString === true)
+                requestUrl += _.toQueryString(_.extend({
                     key: YouTubeAPIKey
-                }, ajaxDataOptions)
+                }, ajaxDataOptions));
+            else
+                requestData = _.extend({
+                                            key: YouTubeAPIKey
+                                        }, ajaxDataOptions);
+
+            return $.ajax(_.extend(ajaxOptions, {
+                url: requestUrl,
+                data: requestData
             }));
         },
         

@@ -2,7 +2,8 @@
     'cocktail',
     'backbone.marionette',
     'backbone.localStorage',
-    'googleAnalytics'
+    'googleAnalytics'//,
+    //'underscore.querystring'
 ], function (Cocktail) {
     'use strict';
 

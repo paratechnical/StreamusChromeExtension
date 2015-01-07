@@ -23,7 +23,9 @@
 			//  Rename lodash to underscore since functionally equivilant but underscore is expected by other third party libraries.
 			'underscore': 'thirdParty/lodash',
 			'selectize': 'thirdParty/selectize',
-			'text': 'thirdParty/text'
+			'text': 'thirdParty/text',
+			'underscore.mixins': 'thirdParty/underscore.mixins'
+
 		},
 
 		shim: {

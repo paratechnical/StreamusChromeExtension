@@ -11,7 +11,8 @@
     'underscore',
     'mocha',
     'selectize',
-    'sinon'
+    'sinon',
+    'underscore.mixins'
 ], function (Backbone, BackboneLocalStorage, Marionette, chai, Cocktail) {
 
     window.expect = chai.expect;
@@ -78,7 +79,7 @@
         
         _runTests: function () {
             //  Finally, load the tests:
-            require(['test/test'], function () {
+             require(['test/test'], function () {
                 window.mocha.run();
             });
         }

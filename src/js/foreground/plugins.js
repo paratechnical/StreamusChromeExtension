@@ -9,7 +9,8 @@
     'jquery-ui',
     'less',
     'underscore',
-    'selectize'
+    'selectize',
+    'underscore.mixins'
 ], function () {
     'use strict';
     
