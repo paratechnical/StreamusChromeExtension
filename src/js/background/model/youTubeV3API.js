@@ -4,8 +4,9 @@
     'background/model/song',
     'common/enum/songType',
     'common/enum/youTubeServiceType',
-    'common/utility'
-], function (Songs, YouTubeAPIKey, Song, SongType, YouTubeServiceType, Utility) {
+    'common/utility',
+    'thirdParty/underscore.mixins'
+], function (Songs, YouTubeAPIKey, Song, SongType, YouTubeServiceType, Utility,_) {
     'use strict';
 
     var YouTubeV3API = Backbone.Model.extend({

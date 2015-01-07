@@ -40,7 +40,7 @@
 
     /*
 	require(["underscore", "thirdParty/underscore.mixins"], function (_) {
-	    _.toQueryString();
+	    _.toQueryString({});
 	});
     
 	require(["underscore", "thirdParty/underscore.mixins"], function (_) {
