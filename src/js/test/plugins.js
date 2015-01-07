@@ -11,8 +11,8 @@
     'underscore',
     'mocha',
     'selectize',
-    'sinon',
-    'underscore.mixins'
+    'sinon'//,
+    //'underscore.mixins'
 ], function (Backbone, BackboneLocalStorage, Marionette, chai, Cocktail) {
 
     window.expect = chai.expect;

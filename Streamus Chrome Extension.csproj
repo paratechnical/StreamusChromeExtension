@@ -341,6 +341,7 @@
     <Content Include="src\js\thirdParty\less.js" />
     <Content Include="src\js\thirdParty\lodash.js" />
     <Content Include="src\js\thirdParty\mocha.js" />
+    <Content Include="src\js\thirdParty\underscore.mixins.js" />
     <Content Include="src\js\thirdParty\require.js" />
     <Content Include="src\js\thirdParty\selectize.js" />
     <Content Include="src\js\thirdParty\sinon.js" />
