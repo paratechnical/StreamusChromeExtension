@@ -10,6 +10,20 @@
     'use strict';
 
     var YouTubeV3API = Backbone.Model.extend({
+        
+        defaults: {
+            signedInUser : null
+        },
+
+        initialize: function () {
+            this.listenTo(Backbone.Wreqr.radio.channel('youtubeApi').vent, 'newUser', this._onSignInManagerChangeSignedInUser);
+            
+        },
+
+        _onSignInManagerChangeSignedInUser: function (signedInUser) {
+            this.attributes.signedInUser = signedInUser;
+        },
+
         //  Performs a search and then grabs the first item and returns its title
         //  Expects options: { title: string, success: function, error: function }
         getSongByTitle: function (options) {
@@ -91,6 +105,10 @@
         
         rateVideo: function (options) {
             
+            //var signedInUser = this.get('signInManager').get('signedInUser')
+
+
+
             return this._doRequest(YouTubeServiceType.Rate, {
                 success: function (response) {
                     if (_.isUndefined(response.items[0])) {

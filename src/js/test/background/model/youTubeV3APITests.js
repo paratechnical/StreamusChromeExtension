@@ -1,9 +1,27 @@
 ﻿define([
     'common/enum/youTubeServiceType',
+    'background/model/signInManager',
     'background/model/youTubeV3API'
-], function (YouTubeServiceType, YouTubeV3API) {
+], function (YouTubeServiceType, SignInManager, YouTubeV3API) {
     'use strict';
     
+    var signInManager = new SignInManager();
+    //signInManager.signInWithGoogle();
+
+    /*
+    signInManager.set('signedInUser', new User({
+        googlePlusId: GOOGLE_PLUS_ID,
+        id: USER_ID
+    }));
+    */
+
+    /*
+    chrome.identity.getAuthToken( function (token) {
+        console.log('user token: ' + token);
+    });
+    */
+    //YouTubeV3API.signInManager = signInManager;
+
     describe('YouTubeV3API', function () {
         describe('when asked to get a list of information involving both available and unavailable songs', function () {
             before(function () {

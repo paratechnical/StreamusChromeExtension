@@ -203,6 +203,8 @@
             this.set('signedInUser', user);
             this.set('signingInUser', null);
 
+            Streamus.channels.youtubeApi.vent.trigger('newUser', user);
+
             //  Announce that user has signedIn so managers can use it to fetch data.
             this.set('signingIn', false);
 

@@ -22,7 +22,8 @@
             backgroundArea: Backbone.Wreqr.radio.channel('backgroundArea'),
             clipboard: Backbone.Wreqr.radio.channel('clipboard'),
             foreground: Backbone.Wreqr.radio.channel('foreground'),
-            player: Backbone.Wreqr.radio.channel('player')
+            player: Backbone.Wreqr.radio.channel('player'),
+            youtubeApi: Backbone.Wreqr.radio.channel('youtubeApi')
         },
 
         initialize: function() {
