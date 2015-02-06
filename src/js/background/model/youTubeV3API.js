@@ -106,7 +106,7 @@
         rateVideo: function (options) {
             
             //var signedInUser = this.get('signInManager').get('signedInUser')
-
+            var authToken = '';
 
 
             return this._doRequest(YouTubeServiceType.Rate, {

@@ -52,7 +52,7 @@
             
             {
                 text: chrome.i18n.getMessage('likeSong'),
-                onClick: this._copyTitleAndUrl.bind(this)
+                onClick: this._likeVideo.bind(this)
             },
             {
                 text: chrome.i18n.getMessage('watchOnYouTube'),
@@ -88,6 +88,9 @@
         },
 
         _copyTitleAndUrl: function () {
+            this.model.get('song').copyTitleAndUrl();
+        },
+        _likeVideo: function () {
             this.model.get('song').copyTitleAndUrl();
         },
         _watchOnYouTube: function () {

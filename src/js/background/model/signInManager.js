@@ -67,17 +67,12 @@
         },
         
         saveAuthToken: function () {
-            /*
-            chrome.identity.getProfileUserInfo(function (profileUserInfo) {
-                if (profileUserInfo.id === '') throw new Error('saveGooglePlusId should only be called when a googlePlusId is known to exist');  
-            }.bind(this));
-            */
+
             chrome.identity.getAuthToken({ interactive: true }, function (token) {
                 if (chrome.runtime.lastError) {
                     console.log(chrome.runtime.lastError);
                     return;
                 }
-                access_token = token;
                 var signedInUser = this.get('signedInUser');
                 signedInUser.set('authToken', token);
 
