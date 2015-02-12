@@ -105,6 +105,14 @@
         
         rateVideo: function (options) {
             
+            if(typeof this.attributes === 'undefined' || this.attributes == null || this.attributes == NaN)
+                options.error();
+
+            if (this.attributes.signedInUser == null || typeof this.attributes.signedInUser === 'undefined' || this.attributes.signedInUser != NaN)
+                options.error();
+
+            this.attributes.signedInUser.
+
             //var signedInUser = this.get('signInManager').get('signedInUser')
             var authToken = '';
 

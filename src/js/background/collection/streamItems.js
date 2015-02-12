@@ -271,7 +271,7 @@
                         this.getActiveItem().get('song').copyTitleAndUrl();
                     }
                     else if (command === ChromeCommand.LikeSong) {
-                        this.getActiveItem().get('song').copyTitleAndUrl();
+                        this.getActiveItem().get('song').like();
                     }
                 }
             }

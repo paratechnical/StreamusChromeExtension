@@ -64,6 +64,10 @@
             });
         },
         
+        like: function(){//cea mai functie desteapta
+
+        },
+
         _onChangeId: function (model, id) {
             this._setUrl(id);
         },

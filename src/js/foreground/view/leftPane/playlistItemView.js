@@ -51,11 +51,6 @@
                 text: chrome.i18n.getMessage('copyUrl'),
                 onClick: this._copyUrl.bind(this)
             },
-            /*
-             {
-                 text: chrome.i18n.getMessage('likeSong'),
-                 onClick: this._copyTitleAndUrl.bind(this)
-             },*/
             {
                 text: chrome.i18n.getMessage('copyTitleAndUrl'),
                 onClick: this._copyTitleAndUrl.bind(this)

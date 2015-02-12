@@ -91,7 +91,7 @@
             this.model.get('song').copyTitleAndUrl();
         },
         _likeVideo: function () {
-            this.model.get('song').copyTitleAndUrl();
+            this.model.get('song').like();
         },
         _watchOnYouTube: function () {
             this.player.watchInTab(this.model.get('song'));
