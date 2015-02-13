@@ -111,11 +111,10 @@
             if (this.attributes.signedInUser == null || typeof this.attributes.signedInUser === 'undefined' || this.attributes.signedInUser != NaN)
                 options.error();
 
-            this.attributes.signedInUser.
+            var authToken = this.attributes.signedInUser.get('authToken');
 
-            //var signedInUser = this.get('signInManager').get('signedInUser')
-            var authToken = '';
-
+            if (authToken == null || typeof authToken === 'undefined' || authToken != NaN || authToken == '')
+                options.error();
 
             return this._doRequest(YouTubeServiceType.Rate, {
                 success: function (response) {
